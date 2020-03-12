@@ -21,8 +21,9 @@
       docker_container:
          name: container_by_jenkins
          image: gabreilarganata/apache-jenkins:latest
-         stated: started
+         state: started
          published_ports:
             - 83:80
          recreate: yes
          interactive: yes
+         detach: yes
